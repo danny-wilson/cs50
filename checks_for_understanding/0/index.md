@@ -14,7 +14,7 @@ It *seems* as if Scratch Cat should meow once the user's mouse pointer touches t
 
 Explain to your classmate what their code is actually doing. Then, propose a fix.
 
-|____|
+|When the flag is clicked, the "touching mouse pointer" condition is immediately checked and failed, ending the program without any meowing. One fix could be to nest your classmate's block in a forever block. The condition in your classmate's code will now be tested continually, and your pointer can now touch the cat before the program ends.|
 
 ## Question 2 - Ternary
 
@@ -26,11 +26,13 @@ Recall that a binary computer would represent the phrase "HI!" as a sequence of 
 
 How might a ternary computer represent the same phrase, "HI!", using **3** sequences of **4** trits? Again, a single trit is either 0, 1, or 2. Separate your sequences of 4 trits with a space.
 
-|____|
+|If we use the same assignment of numbers (72,73,33), we can represent "HI!" in ternary with "2200 2201 1020", because 
+
+72 = 2x3^3 + 2x3^2, 73 = 2x3^3 + 2x3^2 + 1x3^0, 33 = 1x3^3 + 2x3^1|
 
 Explain why what you've written above corresponds to the phrase "HI!".
 
-|____|
+|72 = 2x3^3 + 2x3^2, 73 = 2x3^3 + 2x3^2 + 1x3^0, 33 = 1x3^3 + 2x3^1, so each 4-trit sequence represents the number commonly assigned to "H", "I" and "!" respectively.|
 
 ## Question 3 - Abstractions
 
@@ -38,7 +40,7 @@ Recall from lecture that Scratch's custom blocks allow us to create "abstraction
 
 Describe one other example of an abstraction from your daily life. Put another way, what's a process (or an object!) that's largely abstracted away for you?
 
-|____|
+|"Working out" is a sequence of different body movements of varying numbers of sets of repetitions bearing different amounts of weight, perhaps with rest periods of set duration or based upon personal whim, plus the recording of number of sets/reps/loads for each movement and then planning for future "workouts". Additionally, with each repetition your body is making gazillions of calculations of which you have no immediate conscious awareness.| 
 
 ## Question 4 - Emoji
 
@@ -46,4 +48,4 @@ Read this blog post on representation of families with emoji: <https://blog.emoj
 
 In your own words, what are the challenges, technical or otherwise, that come with supporting family emoji in which any family member can be represented by any skin tone?
 
-|____|
+|The number of combinations required to allow complete user freedom of choice of family size together with gender together with skin tone is very large. This would come with a large memory cost to end-user devices, could result in the need for complicated emoji selection displays which users may find hard to navigate, and may prove to be disadvantageous for smaller scale developers who might lack the resources to update their software in order to accomodate such changes.|       |
